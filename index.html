@@ -12,14 +12,17 @@
 <html class="no-js">
   <!-- <![endif]-->
   <head>
-  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Music and Audio Computing Lab - Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <!-- build:css(.tmp) styles/main.css-->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
   </head>
   <body ng-app="maclabWebApp">
     <!--[if lt IE 7]>
@@ -33,23 +36,23 @@
     <nav role="navigation" class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.php" class="navbar-brand">Start Bootstrap</a>
+          <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">MACLab</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling-->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">About</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publication">Publication</a></li>
+            <li><a href="#db">Database</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse-->
       </div>
       <!-- /.container-->
     </nav>
-    <div class="full-width-image-1">
-      <div class="logo-wrapper"><img src="http://placehold.it/200x200&amp;text=Logo" class="img-responsive"></div>
-    </div>
+    <div class="full-width-image-1"></div>
     <!-- /full-width-image-1-->
     <div ng-view="" class="container"></div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID-->
@@ -61,8 +64,15 @@
       ga('create', 'UA-XXXXX-X');
       ga('send', 'pageview');
     </script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-    <script src="scripts/modules.js"></script>
-    <script src="scripts/scripts.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- build:js scripts/modules.js-->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <!-- endbuild-->
+    <!-- build:js({.tmp,app}) scripts/scripts.js-->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild-->
   </body>
 </html>
