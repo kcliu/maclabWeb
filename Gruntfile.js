@@ -281,11 +281,11 @@ module.exports = function (grunt) {
       ],
       dist: [
         'jade',
-        'coffee',
-        'copy:styles',
-        'imagemin',
-        'svgmin',
-        'htmlmin'
+        'coffee:dist',
+        'copy:styles'
+        //'imagemin',
+        //'svgmin',
+        //'htmlmin'
       ]
     },
     karma: {
@@ -350,7 +350,7 @@ module.exports = function (grunt) {
     'autoprefixer',
     'copy:dist',
     'cdnify',
-    'ngmin',
+    //'ngmin',
     //'cssmin',
     'uglify',
     'rev',
