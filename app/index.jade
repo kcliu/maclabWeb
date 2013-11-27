@@ -35,10 +35,10 @@ html.no-js
       script(src='bower_components/es5-shim/es5-shim.js')
       script(src='bower_components/json3/lib/json3.min.js')
     // Add your site or application content here
-    div(ng-include="'/views/nav.html'")
-    div(ng-include="'/views/logo.html'")
+    div(ng-include="'views/nav.html'")
+    div(ng-include="'views/logo.html'")
     .container(ng-view='')
-    div(ng-include="'/views/footer.html'")
+    div(ng-include="'views/footer.html'")
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID
     script.
@@ -49,7 +49,7 @@ html.no-js
       ga('create', 'UA-XXXXX-X');
       ga('send', 'pageview');
     script(src='bower_components/angular/angular.js')
-    // build:js scripts/modules.js
+    // build:js(app) scripts/modules.js
     script(src='bower_components/angular-resource/angular-resource.js')
     script(src='bower_components/angular-cookies/angular-cookies.js')
     script(src='bower_components/angular-sanitize/angular-sanitize.js')

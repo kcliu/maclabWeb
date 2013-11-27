@@ -167,7 +167,7 @@ module.exports = function (grunt) {
       }
     },
     useminPrepare: {
-      html: './tmp/index.html',
+      html: '.tmp/index.html',
       options: {
         dest: '<%= yeoman.dist %>'
       }
@@ -282,10 +282,10 @@ module.exports = function (grunt) {
       dist: [
         'jade',
         'coffee:dist',
-        'copy:styles'
-        //'imagemin',
+        'copy:styles',
+        'imagemin',
         //'svgmin',
-        //'htmlmin'
+        'htmlmin'
       ]
     },
     karma: {
@@ -345,13 +345,14 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'useminPrepare',
     'concurrent:dist',
+    'useminPrepare',
     'autoprefixer',
+    'concat',
     'copy:dist',
     'cdnify',
-    //'ngmin',
-    //'cssmin',
+    'ngmin',
+    'cssmin',
     'uglify',
     'rev',
     'usemin'
