@@ -18,7 +18,11 @@ angular.module('maclabWebApp', [
         templateUrl: 'views/publication.html'
       .when '/db',
         templateUrl: 'views/database.html'
+      .when '/job',
+        templateUrl: 'views/job.html'
       .when '/contact',
         templateUrl: 'views/contact.html'
       .otherwise
         redirectTo: '/'
+
+    $locationProvider.html5Mode(true);
