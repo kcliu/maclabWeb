@@ -94,8 +94,23 @@ body .footer{
   width:100%;
   height: 100%;
   /*background: #fff;*/
+  background-image: url(../images/dark_wood.png);
   padding:10px;
   margin-top: 5px;
   text-align: center;
   font-size:12px;
+  color: #999;
+}
+
+body .footer a{
+  color: #999;
+  text-decoration: none;
+}
+
+body .footer a:hover{
+  color: #fff;
+}
+
+body .navbar {
+  background-image: url(../images/dark_wood.png);
 }
