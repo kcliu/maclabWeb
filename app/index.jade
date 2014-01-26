@@ -20,7 +20,7 @@ html.no-js
     // build:css(.tmp) styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
-    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css')
     link(href='http://fonts.googleapis.com/css?family=Allerta', rel='stylesheet', type='text/css')
   body(ng-app='maclabWebApp')
@@ -48,6 +48,9 @@ html.no-js
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-XXXXX-X');
       ga('send', 'pageview');
+    script.
+      var addthis_config = {"data_track_addressbar":true};
+    script(type='text/javascript', src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e546fd1c1f2afe')
     script(src='bower_components/angular/angular.js')
     // build:js(app) scripts/modules.js
     script(src='bower_components/angular-resource/angular-resource.js')
