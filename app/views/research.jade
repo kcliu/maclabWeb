@@ -14,20 +14,44 @@
           img.media-object.img-thumbnail(src='./images/emo_clas.jpg', height='320', width='320')
         div.media-body
           h4.media-heading
-            | Large-Sacle music emotion classification
-          | Emotion-based music retrieval has been considered as a prominent way of music information access in the digital era&comma; as music is often created to convey emotion&period; This project aims at building a practical emotion classification system using large-scale data sets and a fine-grained level of emotion description&period;  Specifically&comma; we are interested in exploiting the rich repository of online tags to create a classification system that discriminates up to hundreds of emotions&comma; just in corresponding to the richness of emotion perception we have while listening to music&period; This project would involve various machine learning techniques such as multi-label classification&comma; cost-sensitive learning&comma; multiple instance learning&comma; and structured learning&period;
+            | LMusic emotion recognition
+          | We are interested in systems that can automatically analyze the affective content of music and then recommend music to users according to the user's emotion. Specific topics include: multimodal approach to affective analysis (audio, lyrics, midi, tags, music context), time-varying emotion prediction, probabilistic model for personalization, and emotion-based music recommendation.
+          p
+          | We won the first prize of the 2012 ACM Multimedia Grand Challenge based on an emotion-based music video composition technology we developed. In addition, Dr. Yi-Hsuan Yang gave a tutorial on this topic in ISMIR 2012.
+          p
+          | Representative publication:
+          ul
+            li The Acoustic Emotion Gaussians model for emotion-based music annotation and retrieval, Proc. ACM Multimedia 2012
+            li Music Emotion Recognition, CRC Press 2011
+            li Prediction of the distribution of perceived music emotions using discrete samples, IEEE Tran. Audio, Speech and Language Processing 2011
+            li A regression approach to music emotion recognition, IEEE Tran. Audio, Speech and Language Processing 2008
       li.media
         a.pull-left
           img.media-object.img-thumbnail(src='./images/emoRecom.png', height='320', width='320')
         div.media-body
           h4.media-heading
-            | Context-aware music recommendation on mobile devices
-          | This project aims at understanding the interplay between listening context&comma; listening mood&comma; and music content&period; Specifically&comma; the envisioned system is a user-centered system which learns to recommend music to a specific user according to day-to-day interaction with the user&period; We are interested in modeling the user&rsquor;s listening behavior according to listening profile&comma; but also interpreting the momentary listening context &lpar;time&comma; location&comma; activity&rpar; and listening mood &lpar;via face&comma; sound&comma; or physiological signals&rpar; by multimodal sensors&comma; especially those deployed on mobile devices&period; This multidisciplinary-natured research would place more emphasis on user modeling&period;
+            | Context-aware music recommendation
+          | Although a great amount of efforts have been made in the music information retrieval community to develop intelligent systems for music organization and retrieval, little is known concerning how users interact with music in the everyday context. Existing studies typically make use of data sets collected in a laboratory, context-deprived context, without taking into account the interplay among the musical, personal, and situational factors of music listening. To bridge the gap, we have launched a number of projects that aim at analyzing large sets of user data collected in-situ in everyday context, via social websites, blogging websites, and smartphones using Android apps. The goal is to understand user behavior in a variety of contexts and to develop personalized and context-aware music recommendation system.
+          p
+          | Representative publication:
+          ul
+            li Quantitative study of music listening behavior in a social and affective context, IEEE Trans. Multimedia 2013
+            li Using emotional context from article for contextual music recommendation, Proc. ACM Multimedia 2013
+            li A large in-situ dataset for context-aware music recommendation on smartphones, Proc. IEEE ICME 2013
+
       li.media
         a.pull-left
           img.media-object.img-thumbnail(src='./images/sparseRepre.png', height='320', width='320')
         div.media-body
           h4.media-heading
             | Sparse representation of music signals and source separation
-          | This project involves the extraction of multiple pitch contours from monaural music signals using an over-complete dictionary of music atoms and optimization techniques that solve a sparse representation problem&comma; mostly based on L1 minimization&period; We are keen to understand which feature representation of music and which decomposition techniques of the representation bring about the best extraction performance&period; Envisioned applications include multi-pitch extraction&comma; singer identification&comma; audio source separation&comma; etc&period; We expect more mathematics and digital signal processing in this project&period;
-
+          | This project investigates sparse representation techniques to obtain a detailed representation of music using (possibly large scale) dictionaries. Envisioned applications include music classification/tagging, multi-pitch extraction, singer identification, audio source separation, amongst others.
+          p
+          | For example, in 2013 we found that group-delay function (GDF) and instantaneous frequency deviation (IFD) are very informative quantities in characterizing the audio signal contents which conventional feature might misses. With our feature learning system, these phase-derived features are verified helpful in playing technique classification and singer identification, both of which are considered difficult using conventional approach. |
+          p
+          | Representative publication:
+          ul
+            li A systematic evaluation of the bag-of-frames representation for music information retrieval, IEEE Trans. Multimedia, to be published
+            li Multipitch estimation of piano music by exemplar-based sparse representation, IEEE Trans. Multimedia 2012
+            li Sparse modeling for artist identification: Exploiting phase information and vocal separation, Proc. ISMIR 2013
+            li Low-rank representation of both singing voice and music accompaniment via learned dictionaries, Proc. ISMIR 2013

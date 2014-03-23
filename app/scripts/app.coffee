@@ -12,10 +12,12 @@ angular.module('maclabWebApp', [
         controller: 'MainCtrl'
       .when '/people',
         templateUrl: 'views/people.html'
+        controller: 'PplCtrl'
       .when '/research',
         templateUrl: 'views/research.html'
       .when '/publication',
         templateUrl: 'views/publication.html'
+        controller: 'PublicationCtrl'
       .when '/db',
         templateUrl: 'views/database.html'
       .when '/job',
