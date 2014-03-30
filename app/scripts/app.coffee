@@ -27,4 +27,3 @@ angular.module('maclabWebApp', [
       .otherwise
         redirectTo: '/'
 
-    $locationProvider.html5Mode(true);
