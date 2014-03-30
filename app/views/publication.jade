@@ -2,22 +2,17 @@
   .content
     h1
       | Book
-    ul.list-group
-      li.list-group-item.well
-        | Y.-H. Yang and H.-H. Chen,
-        br
-        | &quot;
-        b Music Emotion Recognition
-        | &comma;&quot;
-        br
-        | CRC Taylor &amp; Francis Books&comma; Feb&period; 2011
-        | &lpar;
-        a(href='http://www.crcpress.com/product/isbn/9781439850466') link
-        | &rpar;
+    .bs-callout.bs-callout-warning
+      | Y.-H. Yang and H.-H. Chen,
+      br
+      b Music Emotion Recognition,
+      br
+      | CRC Taylor & Francis Books, Feb. 2011 (
+      a(href='http://www.crcpress.com/product/isbn/9781439850466') link
+      | )
     h1
       | Journal Papers
-    ul.list-group
-      li.list-group-item.well(ng-repeat="paper in journal_papers")
+    .bs-callout.bs-callout-warning(ng-repeat="paper in journal_papers")
         {{paper.authors}},
         br
         b{{paper.title}}
@@ -25,8 +20,7 @@
         {{paper.where}}
     h1
       | Conference Papers
-    ul.list-group
-      li.list-group-item.well(ng-repeat="paper in conf_papers")
+    .bs-callout.bs-callout-warning(ng-repeat="paper in conf_papers")
         {{paper.authors}},
         br
         b{{paper.title}}
@@ -34,8 +28,8 @@
         {{paper.where}}
 
     hr
-    div.well
-      b Copyright Notice&colon;
+    .bs-callout.bs-callout-danger
+      b Copyright Notice:
       br
       | The documents on this page have been published by scholarly journals or conferences for the purpose of non-commercial dissemination of scientific work&period; These manuscripts are copyrighted by the authors and&sol;or the journals&sol;conferences in which they are published&period; You may copy a manuscript for scholarly&comma; non-commercial purposes&comma; provided that you agree with these terms&period;
 
